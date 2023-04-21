@@ -21,7 +21,7 @@ https://kayjeee.github.io/2024-Pop-concert/
 
 
 ## Presentation of Project
-
+https://www.loom.com/share/2eda8d8fa54d4792ad6b3aebe3abdb8a
 
 
 ## Project Description
@@ -36,8 +36,8 @@ To get a local copy up and running usual steps.
 ## Author
 👤 **Kayjee**
 
-- GitHub: [@kayjeee](https://github.com/kayjeee)
-- LinkedIn: [@kayjeee](https://www.linkedin.com/in/kagiso-sebogodi/)
+- GitHub: [@tacettinkustu](https://github.com/kayjeee)
+- LinkedIn: [tacettinkustu](https://www.linkedin.com/in/kagiso-sebogodi/)
 
 ## UI Designer
 
@@ -48,4 +48,3 @@ Feel free to check the [issues page](https://github.com/kayjeee/2024-Pop-concert
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
