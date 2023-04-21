@@ -128,7 +128,7 @@ N/A
 
 Clone this repository to your desired folder do:
 
-git clone git@github.com:kayjeee/Microverse-Portfolio.git
+git clone https://github.com/kayjeee/2024-Pop-concert.git
 
 
 ### Install
