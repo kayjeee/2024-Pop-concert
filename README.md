@@ -17,11 +17,11 @@ It is built as a part of Microverse Web Developer Course. The mobile-first appro
 
 
 ## Live Demo
-
+https://kayjeee.github.io/2024-Pop-concert/
 
 
 ## Presentation of Project
-
+https://www.loom.com/share/2eda8d8fa54d4792ad6b3aebe3abdb8a
 
 
 ## Project Description
