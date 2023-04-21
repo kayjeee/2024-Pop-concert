@@ -1,134 +1,144 @@
-/* Text */
+/* stylelint-disable indentation */
+
 .text-center {
-  text-align: center;
-}
+    text-align: center;
+  }
 
-@font-face {
-  font-family: "cocogoose";
-  src: url("../utils/fonts/cocogoose/Cocogoose.ttf");
-}
+  @font-face {
+    /* Cocogoose Bold */
+    font-family: "cocogoose";
+    src: url("../utils/fonts/cocogoose/Cocogoose.ttf");
+  }
 
-@font-face {
-  font-family: "cocogoose-light";
-  src: url("../utils/fonts/cocogoose/Cocogoose-light.ttf");
-}
+  @font-face {
+    /* Cocogoose Light */
+    font-family: "cocogoose-light";
+    src: url("../utils/fonts/cocogoose/Cocogoose-light.ttf");
+  }
 
-.heading-small {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
+  .heading-small {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
 
-.heading-medium {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
+  .heading-medium {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 
-.heading-big {
-  font-size: 1.75rem;
-  font-weight: 900;
-}
+  .heading-big {
+    font-size: 1.75rem;
+    font-weight: 900;
+  }
 
-/* Text Colors */
-.special-color {
-  background: url("https://wallpaperaccess.com/full/1818031.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-text-fill-color: transparent;
-}
+  /* Text Colors */
+  .special-color {
+    background: url("https://wallpaperaccess.com/full/1818031.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.light-black {
-  color: #272a31;
-}
+  .light-black {
+    color: #272a31;
+  }
 
-.dark-orange {
-  color: #ec5242;
-}
+  .dark-orange {
+    color: #ec5242;
+  }
 
-.light-grey {
-  color: #d3d3d3;
-}
+  .light-grey {
+    color: hsla(0, 0%, 13%, 1);
+  }
 
-.bg-light-black {
-  background: #272a31;
-}
+  .light-white {
+    color: rgb(248, 248, 248);
+  }
 
-.bg-dark-orange {
-  background: #ec5242;
-}
+  /* Background Colors */
 
-.bg-light-grey {
-  background: rgba(250, 247, 247, 0.829);
-}
+  .bg-light-black {
+    background: #272a31;
+  }
 
-/* Container */
-.container {
-  width: 100%;
-  padding: 5%;
-}
+  .bg-dark-orange {
+    background: #ec5242;
+  }
 
-/* Layouts */
+  .bg-light-grey {
+    background: rgba(250, 247, 247, 0.829);
+  }
 
-.flex-row-center-speaker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* Container */
+  .container {
+    width: 100%;
+    padding: 5%;
+  }
 
-.flex-column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  /* Layouts */
 
-/* Buttons */
-.btn {
-  width: 300px;
-  height: 60px;
-  background-color: #ec5242;
-  color: #d3d3d3;
-  font-size: 1.25rem;
-  border-radius: 5px;
-}
+  .flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.btn:hover {
-  opacity: 0.7;
-}
+  .flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* Horizontal Line */
-.horizontal-line {
-  border-width: 0;
-  height: 2px;
-  background-color: #ec5242;
-  width: 15%;
-  margin-bottom: 5%;
-  margin-top: 2%;
-  opacity: 0.9;
-}
+  /* Buttons */
+  .btn {
+    width: 300px;
+    height: 60px;
+    background-color: #ec5242;
+    color: #d3d3d3;
+    font-size: 1.25rem;
+    border-radius: 5px;
+  }
 
-.full-horizontal-line {
-  border-width: 0;
-  height: 1px;
-  background-color: #272a31;
-  width: 100%;
-  opacity: 0.6;
-  margin: 5% 0;
-}
+  .btn:hover {
+    opacity: 0.7;
+  }
 
-/* Margins */
-.margin-top {
-  margin-top: 5%;
-}
+  /* Horizontal Line */
+  .horizontal-line {
+    border-width: 0;
+    height: 2px;
+    background-color: #ec5242;
+    width: 15%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    opacity: 0.9;
+  }
 
-.margin-top-big {
-  margin-top: 10%;
-}
+  .full-horizontal-line {
+    border-width: 0;
+    height: 1px;
+    background-color: #272a31;
+    width: 100%;
+    opacity: 0.6;
+    margin: 5% 0;
+  }
 
-.margin-bottom {
-  margin-bottom: 5%;
-}
+  /* Margins */
+  .margin-top {
+    margin-top: 5%;
+  }
 
-.margin-vertical {
-  margin: 5% 0;
-}
+  .margin-top-big {
+    margin-top: 10%;
+  }
+
+  .margin-bottom {
+    margin-bottom: 5%;
+  }
+
+  .margin-vertical {
+    margin: 5% 0;
+  }

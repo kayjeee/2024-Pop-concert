@@ -1,51 +1,51 @@
-const speakers = [
+const artists = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1598387846148-47e82ee120cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-    name: 'Jay zee',
-    organization: 'kay jee music label',
+    image: 'https://avatars.githubusercontent.com/u/51737508?v=4',
+    name: 'Tacettin Kustu',
+    organization: 'Full Stack Developer at Microverse',
     background:
       'Lorem ipsum, dolor sit amet adipisicing elit. Deleniti, molestias.',
   },
   {
     id: 2,
     image:
-      'https://images.unsplash.com/photo-1545224144-b38cd309ef69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-    name: 'Post malone',
-    organization: 'kay jee music label',
+      'https://static.dezeen.com/uploads/2021/06/elon-musk-architect_dezeen_1704_col_0.jpg',
+    name: 'Elon Musk',
+    organization: 'CEO of Tesla',
     background:
       'Lorem ipsum, dolor sit amet adipisicing elit. Deleniti, molestias.',
   },
   {
     id: 3,
     image:
-      'https://images.unsplash.com/photo-1519326773765-3ae3b02c44cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80',
-    name: 'Kanye',
-    organization: 'kay jee music label',
+      'https://www.ortakdurak.com/wp-content/uploads/2021/06/Jeff-Bezos.png',
+    name: 'Jeff Bezos',
+    organization: 'CEO of Amazon',
     background:
       'Lorem ipsum, dolor sit amet adipisicing elit. Deleniti, molestias.',
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1598387993640-1eda0d648fda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80',
-    name: 'beyonce',
-    organization: 'kay jee music label',
+    image: 'https://i1.sndcdn.com/avatars-000099702312-agl30n-t500x500.jpg',
+    name: 'Mark Zuckerberg',
+    organization: 'CEO of Facebook',
     background:
       'Lorem ipsum, dolor sit amet adipisicing elit. Deleniti, molestias.',
   },
   {
     id: 5,
     image:
-      'https://images.unsplash.com/photo-1598387993441-a364f854c3e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80',
+      'https://eshop.macsales.com/blog/wp-content/uploads/2015/03/TimCookTwitter.jpg',
     name: 'Tim Cook',
-    organization: 'kay jee music label',
+    organization: 'CEO of Apple',
     background:
       'Lorem ipsum, dolor sit amet adipisicing elit. Deleniti, molestias.',
   },
   {
     id: 6,
     image:
-      'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940%27',
+      'https://www.glusea.com/wp-content/uploads/2020/11/M-FEJMZ0_400x400.jpg',
     name: 'Sunder Pichai',
     organization: 'CEO of Google',
     background:
@@ -53,68 +53,68 @@ const speakers = [
   },
 ];
 
-const featuredSpeakers = document.querySelector('.speakers-list');
-const speakersButton = document.querySelector('.speakers-btn');
+const featuredArtists = document.querySelector('.artists-list');
+const artistsButton = document.querySelector('.artists-btn');
 
-function loadSpeakers() {
-  speakers.forEach((speaker, index) => {
-    const speakerContainer = document.createElement('article');
-    speakerContainer.className = index > 1 ? 'flex-row-center-speaker speakers-display' : 'flex-row-center-speaker';
-    featuredSpeakers.appendChild(speakerContainer);
+function loadArtists() {
+  artists.forEach((artist, index) => {
+    const artistContainer = document.createElement('article');
+    artistContainer.className = index > 1 ? 'flex-row-center artists-display' : 'flex-row-center';
+    featuredArtists.appendChild(artistContainer);
 
-    const speakerImage = document.createElement('img');
-    speakerImage.src = `${speaker.image}`;
-    speakerImage.alt = `Image of ${speaker.name}`;
-    speakerImage.className = 'speaker-image';
-    speakerContainer.appendChild(speakerImage);
+    const artistImage = document.createElement('img');
+    artistImage.src = `${artist.image}`;
+    artistImage.alt = `Image of ${artist.name}`;
+    artistImage.className = 'artist-image';
+    artistContainer.appendChild(artistImage);
 
-    const speakerInfos = document.createElement('div');
-    speakerInfos.className = 'speaker-infos';
-    speakerContainer.appendChild(speakerInfos);
+    const artistInfos = document.createElement('div');
+    artistInfos.className = 'artist-infos';
+    artistContainer.appendChild(artistInfos);
 
-    const speakerName = document.createElement('h3');
-    speakerName.className = 'light-black heading-medium speaker-heading';
-    speakerName.textContent = `${speaker.name}`;
-    speakerInfos.appendChild(speakerName);
+    const artistName = document.createElement('h3');
+    artistName.className = 'light-black heading-medium artist-heading';
+    artistName.textContent = `${artist.name}`;
+    artistInfos.appendChild(artistName);
 
-    const speakerOrganization = document.createElement('h4');
-    speakerOrganization.className = 'dark-orange';
-    speakerOrganization.textContent = `${speaker.organization}`;
-    speakerInfos.appendChild(speakerOrganization);
+    const artistOrganization = document.createElement('h4');
+    artistOrganization.className = 'dark-orange';
+    artistOrganization.textContent = `${artist.organization}`;
+    artistInfos.appendChild(artistOrganization);
 
-    const speakerBackground = document.createElement('h4');
-    speakerBackground.className = 'light-black';
-    speakerBackground.textContent = `${speaker.background}`;
-    speakerInfos.appendChild(speakerBackground);
+    const artistBackground = document.createElement('h4');
+    artistBackground.className = 'light-black';
+    artistBackground.textContent = `${artist.background}`;
+    artistInfos.appendChild(artistBackground);
   });
 }
 
-function toggleSpeakers() {
-  const displayedItems = document.querySelectorAll('.speakers-display');
+function toggleArtist() {
+  const displayedItems = document.querySelectorAll('.artists-display');
   const toggledItems = document.querySelectorAll('.toggle');
 
   if (toggledItems.length === 0) {
     displayedItems.forEach((item) => {
-      item.className = 'flex-row-center-speaker toggle';
+      item.className = 'flex-row-center toggle';
     });
-    speakersButton.textContent = 'LESS';
+    artistsButton.textContent = 'LESS';
     const arrow = document.createElement('i');
     arrow.className = 'fas fa-angle-up down-arrow';
-    speakersButton.appendChild(arrow);
+    artistsButton.appendChild(arrow);
   }
   if (toggledItems.length) {
     toggledItems.forEach((item) => {
-      item.className = 'flex-row-center-speaker speakers-display';
-      speakersButton.textContent = 'MORE';
+      item.className = 'flex-row-center artists-display';
+      artistsButton.textContent = 'MORE';
       const arrow = document.createElement('i');
       arrow.className = 'fas fa-angle-down down-arrow';
-      speakersButton.appendChild(arrow);
+      artistsButton.appendChild(arrow);
     });
   }
 }
 
-featuredSpeakers.addEventListener('DOMContentLoaded', loadSpeakers());
-speakersButton.addEventListener('onclick', toggleSpeakers);
+featuredArtists.addEventListener('DOMContentLoaded', loadArtists());
+artistsButton.addEventListener('onclick', toggleArtist);
 
 function openNav() {
   document.getElementById('myNav').style.width = '100%';

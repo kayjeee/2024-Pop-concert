@@ -191,12 +191,12 @@ nav {
   opacity: 0.7;
 }
 
-/* Speakers */
-.speakers-btn {
+/* artists */
+.artists-btn {
   display: none;
 }
 
-.speakers-list {
+.artists-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -293,7 +293,7 @@ nav {
 .past-first-activity {
   width: 40%;
   min-height: 300px;
-  background: url("https://monbien-events.com/wp-content/uploads/2018/03/conference_crop.jpg");
+  background: url("https://images.pexels.com/photos/5152572/pexels-photo-5152572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   position: relative;
   opacity: 0.8;
@@ -326,7 +326,7 @@ nav {
   margin-bottom: 2%;
 }
 
-/* toggle for speakers */
-.speakers-display {
+/* toggle for artists */
+.artists-display {
   display: flex;
 }
