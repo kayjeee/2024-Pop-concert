@@ -1,613 +1,332 @@
-body {
-  max-width: 1800px;
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  .btn {
-    border: none;
-    cursor: pointer;
-    background: none;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .btn.btn-secondary {
-    border: 3px solid #ec5242;
-  }
-
-  .btn.btn-light {
-    border: 3px solid #d3d3d3;
-  }
-
-  .btn.btn-primary {
-    background-color: #ec5242;
-    color: #fff;
-    font-size: 1.5rem;
-    padding-inline: 2rem;
-    padding-block: 1rem;
-  }
-
-  .nav-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    background-image: url(https://www.teahub.io/photos/full/106-1068836_rock-party-music-concert-dance-hands-party-wallpaper.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-  }
-
-  /* Navbar */
-  nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  .hamburger {
-    display: none;
-    cursor: pointer;
-  }
-
-  .desktop-navbar {
-    width: 200%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #272a31;
-    padding: 5px 5%;
-  }
-
-  .navbar-ul {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none; /* remove default bullet dots */
-  }
-
-  .desktop-nav-link {
-    color: #272a31;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .desktop-navbar ul li {
-    margin: 0 1%;
-    white-space: nowrap;
-  }
-
-  .desktop-navbar ul li:hover {
-    opacity: 0.7;
-  }
-
-  .main-logo:hover {
-    opacity: 0.7;
-  }
-
-  .main-logo-img {
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-  }
-
-  /* First Section */
-  .main-content-headers {
-    width: 80%;
-    margin-top: -23%;
-  }
-
-  .main-content-headers h2 {
-    font-size: 2.5rem;
-    margin-top: 19%;
-    margin-bottom: -50px;
-  }
-
-  .main-content-headers h1 {
-    font-size: 3.5rem;
-    margin-bottom: -10%;
-  }
-
-  .year {
-    font-size: 4.5rem;
-    margin-bottom: 5%;
-  }
-
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .headline-section {
-    height: 100vh;
-    background-image: url(../images/background.svg);
-    object-fit: fill;
-    background-size: 100%;
-    background-position: 8px;
-    background-position-y: 62px;
-    top: -1px;
-    margin-bottom: -20px;
-    border-bottom-left-radius: -66px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10rem;
-  }
-
-  .special-color {
-    background: url(https://wallpaperaccess.com/full/1818031.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .headline-text {
-    padding-left: -0.8rem;
-    font-size: 1rem;
-    max-height: 100px;
-    line-height: 22px;
-    margin: -1px -27px;
-    margin-left: -3px;
-    max-width: 47rem;
-  }
-
-  .header-content {
-    width: 74%;
-    font-size: 1.25rem;
-    padding: 33px;
-    margin-top: -9%;
-    padding-right: 20px;
-  }
-
-  .infos {
-    margin-top: 10%;
-    margin-right: 165px;
-  }
-
-  .bg-header-image {
-    width: 80%;
-  }
-
-  .bg-header-image-rotate {
-    width: 80%;
-  }
-
-  .date {
-    font-size: 2rem;
-    margin-top: -20%;
-  }
-
-  .location {
-    font-size: 1.25rem;
-  }
-
-  /* Upperside */
-  .upperside {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #f5f5f5;
-    width: 100%;
-    height: 30px;
-    opacity: 0.9;
-  }
-
-  .upperside-ul {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 5%;
-    list-style: none;
-    background-color: #fff;
-  }
-
-  .upperside-item:hover {
-    opacity: 0.7;
-  }
-
-  /* Main Program */
-  .main-program {
-    background: url("../images/mosaic.png");
-    width: 100%;
-    height: 100%;
-    padding: 0%;
-    opacity: 0.9;
-  }
-
-  .main-program h2 {
-    font-size: 28px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    text-align: center;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-
-  .short-horizontal-line {
-    border-width: 0;
-    height: 2px;
-    background-color: #ec5242;
-    width: 15%;
-    margin-bottom: 5%;
-    margin-top: 2%;
-    opacity: 0.9;
-  }
-
-  .see-program {
-    display: block;
-    color: #ec5242;
-    font-size: 1.5rem;
-    margin-top: 5%;
-    margin-left: 38%;
-  }
-
-  .program-item {
-    opacity: 0.7;
-    margin: 2% 0;
-    padding: 3%;
-    border-radius: 5px;
-  }
-
-  .item-icon {
-    width: 12%;
-  }
-
-  .item-header {
-    width: 28%;
-  }
-
-  .item-content {
-    width: 60%;
-  }
-
-  .main-btn {
-    margin: 5% 0;
-  }
-
-  .flex-column-center2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .program-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5%;
-  }
-
-  .heading-medium {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-
-  .light-black {
-    color: #272a31;
-  }
-
-  .h2 {
-    padding-left: 10%;
-  }
-
-  .dark-orange {
-    color: #ec5242;
-  }
-
-  .light-grey {
-    color: #d3d3d3;
-  }
-
-  /* Featured Speakers */
-
-  .featured-speakers-header {
-    margin-top: 10%;
-  }
-
-  .featured-speakers h2 {
-    font-size: 28px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    text-align: center;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-
-  .speakers-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.8;
-  }
-
-  .speaker-image {
-    width: 150px;
-    margin: 3%;
-    border-radius: 100%;
-  }
-
-  .speaker-heading {
-    margin-bottom: 2%;
-  }
-
-  .speaker-infos {
-    width: 67%;
-    margin: 3%;
-    margin-left: 0;
-  }
-
-  .speakers-btn {
-    display: none;
-  }
-
-  .down-arrow {
-    color: #ec5242;
-    margin: 0 5px;
-  }
-
-  /* toggle for speakers */
-  .speakers-display {
-    display: flex;
-  }
-
-  .flex-row-center-speaker {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Speakers */
-
-  /* Partners */
-
-  .bg-light-black {
-    background: #272a31;
-  }
-
-  /* Partners */
-  .partners {
-    width: 100%;
-    opacity: 0.9;
-    margin: 5% 0;
-  }
-
-  .list-item-container {
-    margin: 10% 5%;
-  }
-
-  .list-item-container:hover {
-    opacity: 0.7;
-  }
-
-  .list-item-container::marker {
-    color: #272a31;
-  }
-
-  .list-item {
-    width: 80px;
-    height: 80px;
-  }
-
-  .partners ul {
-    list-style-type: none;
-  }
-
-  .partners h2 {
-    font-size: 28px;
-    font-family: Arial, sans-serif;
-    color: hsla(0, 0%, 100%, 1);
-    text-align: center;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-
-  .partners-list {
-    flex-wrap: wrap;
-  }
-
-  .partners-heading {
-    margin-top: 2%;
-  }
-
-  .flex-column-center-partners {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex-row-center-partners {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Contact */
-
-  .flex-column-center-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .adress {
-    margin-left: 3%;
-  }
-
-  .rights {
-    margin-top: 3%;
-  }
-
-  .ytu-logo {
-    width: 80px;
-    height: 80px;
-  }
-
-  /* About Us */
-  .horizontal-line {
-    width: 200px;
-    margin-top: 1%;
-  }
-
-  .about-us h2 {
-    font-size: 28px;
-    font-family: Arial, sans-serif;
-    color: #e41010;
-    text-align: center;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-
-  .about-us {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .margin-top-big {
-    margin-top: 5%;
-  }
-
-  .family-photo {
-    width: 105%;
-    margin: 5%;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .flex-column-center-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-us-content {
-    margin: 12px;
-    padding: 3%;
-    font-size: 1.25rem;
-    text-align: center;
-  }
-
-  /* Past Activities */
-  .past-activities {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-  }
-
-  .activities {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .first-activity-content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ec5242;
-    opacity: 0.8;
-    color: #fff;
-  }
-
-  .act {
-    width: 40%;
-    font-size: 1.25rem;
-  }
-
-  .act:hover {
-    opacity: 0.7;
-  }
-
-  .past-content {
-    margin-top: 01%;
-    font-size: 1.1rem;
-  }
-
-  .past-first-activity {
-    width: 40%;
-    min-height: 300px;
-    background: url("https://images.unsplash.com/photo-1593573969589-c416b9c926de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-    background-size: cover;
-    position: relative;
-    opacity: 0.8;
-    margin: 5% 0;
-  }
-
-  .past-second-activity {
-    width: 40%;
-    min-height: 300px;
-    background: url("https://images.unsplash.com/photo-1613210434051-4b00d62d03fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-    background-size: cover;
-    position: relative;
-    opacity: 0.8;
-    margin: 5% 0;
-  }
-
-  /* Contact */
-  .contact-line {
-    margin-bottom: 2%;
-  }
-
-  .contact {
-    margin-top: 0;
-  }
-
-  .contact-details {
-    width: 100%;
-    margin: 5% 0;
-    justify-content: space-around;
-    justify-content: center;
-  }
-
-  .full-horizontal-line {
-    border-width: 0;
-    height: 1px;
-    background-color: #272a31;
-    width: 100%;
-    opacity: 0.6;
-    margin: 5% 0;
-  }
-
-  .footer h3 {
-    font-size: 28px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    text-align: center;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-
-  .flex-row-center-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer {
-    width: 100%;
-    margin: 5% 0;
-    margin-top: 0;
-  }
+body {
+  max-width: 1400px;
+}
+
+/* Upperside */
+.upperside {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #272a31;
+  width: 100%;
+  height: 30px;
+  opacity: 0.9;
+}
+
+.upperside-ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.upperside-item:hover {
+  opacity: 0.7;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hamburger-menu-display {
+  display: none;
+}
+
+.desktop-navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #272a31;
+  padding: 5px 5%;
+}
+
+.navbar-ul {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.desktop-nav-link {
+  color: #272a31;
+  font-weight: 600;
+}
+
+.desktop-navbar ul li {
+  margin: 0 1%;
+  white-space: nowrap;
+}
+
+.desktop-navbar ul li:hover {
+  opacity: 0.7;
+}
+
+.main-logo:hover {
+  opacity: 0.7;
+}
+
+.main-logo-img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+}
+
+/* First Section */
+.main-content-headers {
+  width: 80%;
+}
+
+.main-content-headers h2 {
+  font-size: 2.5rem;
+}
+
+.main-content-headers h1 {
+  font-size: 3.5rem;
+}
+
+.year {
+  font-size: 4.5rem;
+  margin-bottom: 5%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  width: 80%;
+  font-size: 1.25rem;
+}
+
+.infos {
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.bg-header-image {
+  width: 80%;
+}
+
+.bg-header-image-rotate {
+  width: 80%;
+}
+
+.date {
+  font-size: 2rem;
+}
+
+.location {
+  font-size: 1.25rem;
+}
+
+/* Main Program */
+.program-items {
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.program-item {
+  opacity: 0.8;
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.item-icon {
+  width: auto;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.item-header {
+  width: auto;
+}
+
+.item-content {
+  width: auto;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.main-btn {
+  display: none;
+}
+
+.see-program {
+  display: block;
+  color: #ec5242;
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+
+.see-program:hover {
+  opacity: 0.7;
+}
+
+/* Speakers */
+.speakers-btn {
+  display: none;
+}
+
+.speakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Partners */
+.partners-heading {
+  margin-top: 5%;
+}
+
+.partners-list {
+  flex-wrap: nowrap;
+}
+
+.list-item {
+  width: 120px;
+  height: 120px;
+}
+
+/* Contact */
+.footer {
+  margin-top: 0;
+}
+
+.contact-details {
+  justify-content: center;
+  margin: 0;
+}
+
+.contact {
+  margin-top: 0;
+}
+
+.rights {
+  margin-top: 3%;
+}
+
+.ytu-logo {
+  margin-right: 3%;
+}
+
+.adress {
+  margin-left: 3%;
+}
+
+/* About Us */
+.horizontal-line {
+  width: 200px;
+  margin-top: 1%;
+}
+
+.about-us {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.margin-top-big {
+  margin-top: 5%;
+}
+
+.family-photo {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.about-us-content {
+  font-size: 1.25rem;
+}
+
+/* Past Activities */
+.past-activities {
+  width: 100%;
+  margin: 0;
+}
+
+.activities {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.past-content {
+  margin-top: 0;
+}
+
+.act {
+  width: 40%;
+  font-size: 1.25rem;
+}
+
+.past-first-activity {
+  width: 40%;
+  min-height: 300px;
+  background: url("https://monbien-events.com/wp-content/uploads/2018/03/conference_crop.jpg");
+  background-size: cover;
+  position: relative;
+  opacity: 0.8;
+  margin: 5% 0;
+}
+
+.first-activity-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ec5242;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.past-second-activity {
+  width: 40%;
+  min-height: 300px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREUyl4_ZFKff7UxDV8HlwuMtoVE_UqMxLljuhd3Ycm5QrvTOVNjYIhBMQaaqa2wxCSkIM&usqp=CAU");
+  background-size: cover;
+  position: relative;
+  opacity: 0.8;
+  margin: 5% 0;
+}
+
+/* Contact */
+.contact-line {
+  margin-bottom: 2%;
+}
+
+/* toggle for speakers */
+.speakers-display {
+  display: flex;
 }

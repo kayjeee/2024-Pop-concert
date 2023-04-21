@@ -59,7 +59,7 @@ const speakersButton = document.querySelector('.speakers-btn');
 function loadSpeakers() {
   speakers.forEach((speaker, index) => {
     const speakerContainer = document.createElement('article');
-    speakerContainer.className = index > 1 ? 'flex-row-center speakers-display' : 'flex-row-center-speaker';
+    speakerContainer.className = index > 1 ? 'flex-row-center-speaker speakers-display' : 'flex-row-center-speaker';
     featuredSpeakers.appendChild(speakerContainer);
 
     const speakerImage = document.createElement('img');
@@ -95,7 +95,7 @@ function toggleSpeakers() {
 
   if (toggledItems.length === 0) {
     displayedItems.forEach((item) => {
-      item.className = 'flex-row-center toggle';
+      item.className = 'flex-row-center-speaker toggle';
     });
     speakersButton.textContent = 'LESS';
     const arrow = document.createElement('i');
