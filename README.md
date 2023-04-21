@@ -36,8 +36,8 @@ To get a local copy up and running usual steps.
 ## Author
 👤 **Kayjee**
 
-- GitHub: [@tacettinkustu](https://github.com/kayjeee)
-- LinkedIn: [tacettinkustu](https://www.linkedin.com/in/kagiso-sebogodi/)
+- GitHub: [@kayjeee](https://github.com/kayjeee)
+- LinkedIn: [@kayjeee](https://www.linkedin.com/in/kagiso-sebogodi/)
 
 ## UI Designer
 
